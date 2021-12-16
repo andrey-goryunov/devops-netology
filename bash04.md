@@ -68,11 +68,11 @@ while [ $flag == true ] ; do
 			curl -sS $host > /dev/null
 
 			if [ "$?" -ne "$code" ] ; then
-				echo `date` $host BAD >> log
+				echo `date` $host BAD >> log.log
 				counter=$(($counter+1))
 
 			else
-				echo `date` $host GOOD >> log
+				echo `date` $host GOOD >> log.log
 				counter=$(($counter+1))
 				echo $counter 
 			fi
