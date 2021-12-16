@@ -95,7 +95,7 @@ while [ $flag == "true" ] ; do
 	for host in $HOSTS ; do
   
 		code=0
-		counter=1
+		counter=0
 
 		while [ $code == 0 ] && (("$counter" < "5")) ; do
 			curl -sS $host > /dev/null
