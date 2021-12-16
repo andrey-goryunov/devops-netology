@@ -54,7 +54,7 @@ done
 ```bash
 #!/bin/bash
 
-HOSTS="localhost:80 localhost:8200 192.168.88.10:80"
+HOSTS="192.168.0.1:80 173.194.222.113:80 87.250.250.242:80"
 flag=true
 
 while [ $flag == true ] ; do
