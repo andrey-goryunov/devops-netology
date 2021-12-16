@@ -50,7 +50,7 @@ while [ $x == 0 ] ; do
 	curl -sS localhost:4757 > /dev/null
 
 	if [ "$?" -ne "$x" ] ; then
-		echo BAD
+		date >> curl.log
 	else
 	break	
 	fi
