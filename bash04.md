@@ -70,7 +70,6 @@ while [ $flag == true ] ; do
 			if [ "$?" -ne "$code" ] ; then
 				echo `date` $host BAD >> log.log
 				counter=$(($counter+1))
-
 			else
 				echo `date` $host GOOD >> log.log
 				counter=$(($counter+1))
